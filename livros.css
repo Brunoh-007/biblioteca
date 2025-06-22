@@ -1,0 +1,172 @@
+html, body {
+height: 100%;
+margin: 0;
+font-family: 'Open Sans', sans-serif;
+background-color: #F8FAFC;
+display: flex;
+flex-direction: column;
+}
+
+header {
+background-color: #1E3A8A;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
+}
+
+header h2 {
+margin: 0;
+}
+
+.link a {
+color: white;
+text-decoration: none;
+margin-left: 20px;
+font-weight: bold;
+}
+
+.livro-container {
+max-width: 900px;
+margin: 40px auto;
+display: flex;
+gap: 40px;
+align-items: flex-start;
+padding: 20px;
+background-color: #E0F2FE;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+width: 90%;
+flex-grow: 1; 
+}
+
+.livro-container img {
+width: 250px;
+height: auto;
+border-radius: 5px;
+object-fit: cover;
+border: 1px solid #1E3A8A;
+}
+
+.livro-info {
+flex: 1;
+}
+
+.livro-info h1 {
+color: #1E3A8A;
+margin-bottom: 10px;
+}
+
+.livro-info h3 {
+color: #1E40AF;
+margin-bottom: 20px;
+}
+
+.livro-info p {
+line-height: 1.6;
+margin-bottom: 20px;
+}
+
+.livro-info a {
+background-color: #1E3A8A;
+color: white;
+padding: 10px 25px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+text-decoration: none;
+}
+
+.livro-info strong {
+    color: #1E3A8A;
+    font-size: 19px;
+}
+
+footer {
+background-color: #1E3A8A;
+color: white;
+text-align: center;
+padding: 15px;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+header {
+flex-direction: column;
+align-items: center;
+padding: 20px 30px;
+text-align: center;
+}
+
+.link {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+margin-top: 10px;
+}
+
+.livro-container {
+flex-direction: column;
+align-items: center;
+gap: 30px;
+padding: 30px 20px;
+}
+
+.livro-info {
+text-align: center;
+}
+
+.livro-info a {
+display: inline-block;
+margin-top: 10px;
+}
+}
+
+
+@media (max-width: 768px) {
+header {
+flex-direction: column;
+padding: 15px 20px;
+}
+
+.link {
+flex-direction: column;
+gap: 10px;
+align-items: center;
+}
+
+.livro-container {
+flex-direction: column;
+gap: 20px;
+padding: 20px 10px;
+}
+
+.livro-container img {
+width: 100%;
+max-width: 300px;
+}
+
+.livro-info h1 {
+font-size: 24px;
+}
+
+.livro-info h3 {
+font-size: 18px;
+}
+
+.livro-info p {
+font-size: 16px;
+}
+
+.livro-info a {
+padding: 10px 20px;
+font-size: 15px;
+}
+}
